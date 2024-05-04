@@ -1,0 +1,41 @@
+{
+  "name": "hexo-idlink",
+  "version": "1.0.5",
+  "description": "a hexo plugin generate static id link",
+  "main": "dist/idlink.js",
+  "files": [
+    "dist/**"
+  ],
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "rollup --config rollup.config.js"
+  },
+  "keywords": [
+    "hexo",
+    "hexo-idlink",
+    "static"
+  ],
+  "author": "Gmero <gmerocom@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "@babel/preset-typescript": "^7.23.3",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-json": "^6.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@xbmlz/eslint-config-prettier": "^0.1.17",
+    "@xbmlz/eslint-config-ts": "^0.1.17",
+    "eslint": "^8.53.0",
+    "@types/hexo": "^3.8.11",
+    "rollup": "^3.29.4",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "hexo-front-matter": "^4.2.1",
+    "hexo-fs": "^4.1.1"
+  }
+}

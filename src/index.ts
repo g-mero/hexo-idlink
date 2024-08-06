@@ -67,7 +67,10 @@ hexo.extend.filter.register('after_init', function () {
         const result = processFileName(getFileName(path))
         if (result.date) {
           const date = moment(result.date).format('YYYY-MM-DD')
-          if (date !== moment(tmpPost.date).format('YYYY-MM-DD')) {
+          if (
+            !tmpPost.date ||
+            date !== moment(tmpPost.date).format('YYYY-MM-DD')
+          ) {
             tmpPost.date = moment(result.date).format('YYYY-MM-DD HH:mm:ss')
             needWrite = true
           }
